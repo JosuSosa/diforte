@@ -1,0 +1,207 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+  font-weight: 600;
+}
+
+.fs-xl {
+  font-size: 5em;
+}
+
+.fs-lg {
+  font-size: 1.15em;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+@media (min-width: 1140px) {
+  .fs-xl-4 {
+    font-size: 1.25em !important;
+  }
+}
+
+.section-fullscreen {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.darken-background {
+  background-color: rgba(15, 15, 15, 0.4);
+  background-blend-mode: overlay;
+}
+
+.darken-background-2 {
+  background-color: rgba(15, 15, 15, 0.8);
+  background-blend-mode: overlay;
+}
+
+.logo-section {
+  background-image: url("../assets/img/logo-section-bg.jpg");
+  background-size: cover;
+  background-position: 50% 65%;
+}
+
+.logo_diforte {
+  width: 50%;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: calc(auto - 5em);
+}
+
+.bienvenida-section {
+  background-image: url("../assets/img/bienvenida-section-bg.jpg");
+  background-size: cover;
+  background-position: 100% 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+.que-es-section {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-auto-rows: 1fr;
+  background-color: #39291c;
+}
+
+.que-es-section__img {
+  object-fit: cover;
+  object-position: 80% 0;
+  height: 100%;
+  width: auto;
+}
+
+.que-es-section__title {
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+.marcas-aliadas-section {
+  background-image: url("../assets/img/marcas-aliadas-section-bg.jpg");
+  background-size: cover;
+  background-position: 100% 0%;
+}
+
+.list-position-inside {
+  list-style-position: inside;
+}
+
+.lista-marcas-aliadas {
+  list-style: none;
+  display: flex;
+  margin-top: auto;
+  gap: 1rem;
+}
+
+.lista-marcas-aliadas li img {
+  height: 75px;
+}
+
+.proyectos-integrales-section {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-auto-rows: 1fr;
+  background-color: #39291c;
+}
+
+.proyectos-integrales-section h2 {
+  font-size: 5em;
+  font-weight: 400;
+}
+
+.proyectos-integrales-section p {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.proyectos-integrales-section__img {
+  object-fit: cover;
+  object-position: 20% 0;
+  height: 100%;
+  width: auto;
+}
+
+.experiencia-premium-section {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-auto-rows: 1fr;
+  background-color: black;
+}
+
+.experiencia-premium-section h2 {
+  font-size: 5em;
+  font-weight: 400;
+}
+
+.experiencia-premium-section p {
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.experiencia-premium-section__img {
+  object-fit: cover;
+  object-position: 50% 0;
+  height: 100%;
+  width: auto;
+}
+
+.experiencia-premium-section__text {
+  margin-top: -40px;
+}
+
+.recorrido-section {
+  background-color: #36281a;
+  display: grid;
+  grid-template-rows: 50vh 50vh;
+  grid-auto-columns: 1fr;
+}
+
+.recorrido-section__img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 50vh;
+  object-position: 0% 50%;
+}
+
+.concepto-detras-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: 1fr;
+  background-color: #6c4937;
+}
+
+.concepto-detras-section__img {
+  width: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+
+.concepto-detras-section__text {
+  margin-top: -40px;
+}
+
+.logo_diforte_chico {
+  height: 40px;
+}
