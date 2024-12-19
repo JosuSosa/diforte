@@ -7,7 +7,6 @@ import experienciaPremiumImg from "../assets/img/experiencia-premium-section-bg.
 import LogoDiforteLiving from "../assets/img/logo-diforte-living.svg";
 import LogoDiventare from "../assets/img/logo-diventare.svg";
 import LogoDormiMasHorizontal from "../assets/img/logo-dormi-mas-horizontal.svg";
-import LogoMoodDeco from "../assets/img/logo-mood-deco.svg";
 import LogoRubenPereyra from "../assets/img/logo-ruben-pereyra.svg";
 import LogoSuquiaDeco from "../assets/img/logo-suquia-deco.svg";
 import LogoLoftTiendaStudio from "../assets/img/logo-loft-tienda-studio.svg";
@@ -17,6 +16,7 @@ import "./Home.css";
 function Home() {
   return (
     <main class="text-white">
+      <NavBar />
       <LogoSection />
       <BienvenidaSection />
       <QueEsDDSection />
@@ -29,6 +29,53 @@ function Home() {
     </main>
   );
 }
+
+const NavBar = () => (
+  <nav
+    className="navbar navbar-expand-lg bg-body-tertiary navbar-diforte sticky-top"
+    style={{ "background-color": "#000" }}
+    data-bs-theme="dark"
+  >
+    <div className="container-fluid">
+      <div className="d-flex">
+        <a className="navbar-brand" href="#">
+          <img src={logo} alt="Logo Distrito Diforte" width="120" height="24" />
+        </a>
+      </div>
+
+      <button
+        className="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav ms-auto text-center text-lg-start">
+          <li className="nav-item">
+            <a className="nav-link" aria-current="page" href="#quienes-somos">
+              Quienes Somos
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#marcas-aliadas">
+              Marcas Aliadas
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#recorrido">
+              Recorrido
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+);
 
 const LogoSection = () => (
   <section className="section-fullscreen logo-section z-n1 darken-background">
@@ -53,7 +100,7 @@ const BienvenidaSection = () => (
 );
 
 const QueEsDDSection = () => (
-  <section className="section-fullscreen que-es-section">
+  <section className="section-fullscreen que-es-section" id="quienes-somos">
     <div className="d-flex flex-column px-4 justify-content-evenly fs-xl-4">
       <h2 className="que-es-section__title text-uppercase fw-light">
         ¿Que es Distrito Diforte?
@@ -96,7 +143,10 @@ const QueEsDDSection = () => (
 );
 
 const MarcasAliadasSection = () => (
-  <section className="section-fullscreen marcas-aliadas-section darken-background-2 text-center gap-5">
+  <section
+    className="section-fullscreen marcas-aliadas-section darken-background-2 text-center gap-5"
+    id="marcas-aliadas"
+  >
     <h2 className="mt-5 mb-3 fs-xl fw-light text-uppercase">
       Las marcas aliadas
     </h2>
@@ -244,7 +294,7 @@ const ExperienciaPremiumSection = () => (
 );
 
 const RecorridoSection = () => (
-  <section className="section-fullscreen recorrido-section">
+  <section className="section-fullscreen recorrido-section" id="recorrido">
     <div className="d-flex flex-column text-center justify-content-center align-items-center">
       <h2 className="text-uppercase fw-light fs-xl">El recorrido</h2>
       <p className="fs-5 w-75">

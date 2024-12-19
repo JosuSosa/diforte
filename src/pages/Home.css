@@ -205,3 +205,7 @@ b {
 .logo_diforte_chico {
   height: 40px;
 }
+
+.navbar-diforte {
+  background-color: #000 !important;
+}
