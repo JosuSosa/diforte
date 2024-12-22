@@ -26,6 +26,12 @@ function Home() {
       <RecorridoSection />
       <ConceptoDetrasSection />
       <LogoSection />
+      <div className="margen-negativo">
+        <p className="fw-bolder text-center">
+          Dirección: Juan nepper 6095 , Córdoba , Argentina
+        </p>
+        <p className="fw-bolder text-center">Nuestro contacto: 0351 620 6429</p>
+      </div>
     </main>
   );
 }

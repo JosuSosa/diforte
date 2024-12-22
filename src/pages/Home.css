@@ -209,3 +209,7 @@ b {
 .navbar-diforte {
   background-color: #000 !important;
 }
+
+.margen-negativo {
+  margin-top: -80px;
+}
