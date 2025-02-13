@@ -11,6 +11,7 @@ import LogoRubenPereyra from "../assets/img/logo-ruben-pereyra.svg";
 import LogoSuquiaDeco from "../assets/img/logo-suquia-deco.svg";
 import LogoLoftTiendaStudio from "../assets/img/logo-loft-tienda-studio.svg";
 import LogoDecoDisin from "../assets/img/logo-deco-disin.svg";
+import { Instagram } from "lucide-react";
 import "./Home.css";
 
 function Home() {
@@ -31,6 +32,15 @@ function Home() {
           Dirección: Juan nepper 6095 , Córdoba , Argentina
         </p>
         <p className="fw-bolder text-center">Nuestro contacto: 0351 620 6429</p>
+        <p className="fw-bolder text-center">
+          <a
+            href="https://www.instagram.com/distritodiforte"
+            className="text-decoration-none text-white"
+          >
+            <Instagram className="me-2" />
+            @distritodiforte
+          </a>
+        </p>
       </div>
     </main>
   );
